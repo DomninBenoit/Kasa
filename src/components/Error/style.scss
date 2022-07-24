@@ -1,0 +1,25 @@
+.ErrorWrapper {
+  color: #ff6060;
+  text-align: center;
+  justify-content: center;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  .ErrorTitle {
+    margin-top: 20vh;
+    font-weight: 700;
+    font-size: 96px;
+  }
+  .ErrorSubtitle {
+    font-weight: 500;
+  }
+  .LinkHome {
+    margin-top: 100px;
+    font-size: 14px;
+    .link {
+      text-decoration: underline;
+      color: #ff6060;
+    }
+  }
+}
