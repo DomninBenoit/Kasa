@@ -1,7 +1,7 @@
 import './style.scss'
 import Header from '../../components/Header'
 import Banner from '../../components/Banner'
-import ListCard from '../../components/listCard'
+import ListCard from '../../components/ListCard'
 import Footer from '../../components/Footer'
 
 function Home() {
