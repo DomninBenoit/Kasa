@@ -26,3 +26,18 @@
     color: #ffffff;
   }
 }
+
+@media (min-width: 900px) {
+  .card {
+    width: 340px;
+    height: 340px;
+    margin: 10px;
+    .cardImg {
+      height: 340px;
+    }
+    .cardBg {
+      background: #f7f7f7;
+      border-radius: 25px;
+    }
+  }
+}

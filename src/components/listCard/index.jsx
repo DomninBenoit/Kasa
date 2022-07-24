@@ -6,9 +6,7 @@ function listCard() {
   return (
     <div className="listCard">
       {datas.map(({ id, cover, title }) => (
-        <div key={id}>
-          <Card img={cover} title={title} />
-        </div>
+        <Card key={id} id={id} img={cover} title={title} />
       ))}
     </div>
   )
