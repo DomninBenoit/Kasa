@@ -1,6 +1,4 @@
 .collapse {
-  font-family: 'Montserrat';
-  font-style: normal;
   margin-top: 20px;
   position: relative;
   width: 100%;
@@ -11,7 +9,8 @@
     background: #ff6060;
     height: 25px;
     color: white;
-    padding: 6px 0 0 7px;
+    padding: 0 0 0 7px;
+    line-height: 190%;
     border-radius: 5px;
     font-size: 13px;
     .svg {
@@ -25,12 +24,22 @@
     position: relative;
     background: #f7f7f7;
     border-radius: 5px;
-    height: 145px;
+    height: auto;
 
     .text {
       margin: 0;
       padding: 15px;
       color: #ff6060;
+      font-weight: 400;
+      font-size: 12px;
+    }
+    .collapseList {
+      margin: 0;
+      padding: 15px;
+    }
+    .collapseListItem {
+      color: #ff6060;
+      list-style-type: none;
       font-weight: 400;
       font-size: 12px;
     }
@@ -44,7 +53,8 @@
     .collapseTitle {
       height: 47px;
       font-size: 24px;
-      padding: 15px 0 0 15px;
+      padding: 0 0 0 15px;
+      line-height: 200%;
       .svg {
         width: 24px;
         height: 14px;
@@ -53,6 +63,9 @@
     }
     .collapseText {
       .text {
+        font-size: 24px;
+      }
+      .collapseListItem {
         font-size: 24px;
       }
     }

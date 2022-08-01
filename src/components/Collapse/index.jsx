@@ -31,7 +31,15 @@ const Collapse = (props) => {
       </div>
       {isOpen && (
         <div className="collapseText">
-          <p className="text">{props.text}</p>
+          {props.title === 'Équipements' ? (
+            <ul className="collapseList">
+              {props.text.map((equip) => (
+                <li className="collapseListItem">{equip}</li>
+              ))}
+            </ul>
+          ) : (
+            <p className="text">{props.text}</p>
+          )}
         </div>
       )}
     </div>

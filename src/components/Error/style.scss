@@ -2,9 +2,6 @@
   color: #ff6060;
   text-align: center;
   justify-content: center;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 500;
   font-size: 18px;
   .ErrorTitle {
     margin-top: 20vh;
@@ -20,6 +17,22 @@
     .link {
       text-decoration: underline;
       color: #ff6060;
+    }
+  }
+}
+
+@media (min-width: 900px) {
+  .ErrorWrapper {
+    .ErrorTitle {
+      font-size: 288px;
+      margin: 35vh 0 20vh 0;
+    }
+    .ErrorSubtitle {
+      font-size: 36px;
+    }
+    .LinkHome {
+      font-size: 18px;
+      margin-top: 20vh;
     }
   }
 }

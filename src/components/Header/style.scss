@@ -6,8 +6,6 @@
     right: 0%;
     .accueil,
     .about {
-      font-family: 'Montserrat';
-      font-style: normal;
       text-transform: uppercase;
       color: #ff6060;
       font-size: 12px;
@@ -26,6 +24,7 @@
       right: 2%;
       .accueil,
       .about {
+        text-transform: capitalize;
         font-size: 24px;
         padding: 20px;
       }

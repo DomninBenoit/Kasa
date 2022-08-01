@@ -1,0 +1,17 @@
+body {
+  font-family: 'Montserrat', serif;
+  font-weight: 500;
+  line-height: 142.6%;
+  margin: 15px 15px 0 15px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+@media (min-width: 900px) {
+  body {
+    margin: 25px 50px 0 50px;
+  }
+}
