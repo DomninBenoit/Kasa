@@ -1,0 +1,72 @@
+.tlahr {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  .tla {
+    position: relative;
+    color: #ff6060;
+    .title {
+      font-size: 18px;
+      margin: 10px 0 0 0;
+    }
+    .location {
+      margin: 5px 0;
+      font-size: 14px;
+    }
+  }
+  .hr {
+    position: relative;
+    margin-top: 10px;
+    height: 30px;
+  }
+}
+.collapseLodging {
+  position: relative;
+}
+
+@media (min-width: 900px) {
+  .tlahr {
+    display: block;
+    flex-direction: row;
+    width: 100%;
+    .tla {
+      .title {
+        font-size: 36px;
+        width: 60%;
+        line-height: 100%;
+      }
+      .location {
+        font-size: 18px;
+        margin: 10px 0;
+      }
+    }
+    .hr {
+      position: absolute;
+      top: 2%;
+      right: 0;
+    }
+  }
+  .collapseLodging {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    .collapse {
+      width: 46%;
+      justify-content: space-between;
+      margin: 0;
+
+      .collapseTitle {
+        font-size: 18px;
+        line-height: 250%;
+      }
+      .collapseText {
+        .text {
+          font-size: 18px;
+        }
+        .collapseListItem {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
