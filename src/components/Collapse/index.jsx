@@ -34,7 +34,9 @@ const Collapse = (props) => {
           {props.title === 'Équipements' ? (
             <ul className="collapseList">
               {props.text.map((equip) => (
-                <li className="collapseListItem">{equip}</li>
+                <li className="collapseListItem" key={equip}>
+                  {equip}
+                </li>
               ))}
             </ul>
           ) : (
