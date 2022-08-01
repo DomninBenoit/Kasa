@@ -1,0 +1,21 @@
+.listStars {
+  position: absolute;
+  top: 25%;
+  height: 33px;
+  .star {
+    margin: 3px;
+    width: 15px;
+    height: 15px;
+  }
+}
+
+@media (min-width: 900px) {
+  .listStars {
+    position: relative;
+    text-align: right;
+    .star {
+      width: 30px;
+      height: 30px;
+    }
+  }
+}
