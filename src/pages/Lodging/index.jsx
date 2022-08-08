@@ -15,7 +15,7 @@ const Lodging = () => {
   return (
     <div>
       <Header />
-      <Gallery pictures={idGal.pictures} lenght={idGal.pictures.length} />
+      <Gallery pictures={idGal.pictures} />
       <div className="tlahr">
         <div className="tla">
           <p className="title">{idGal.title}</p>

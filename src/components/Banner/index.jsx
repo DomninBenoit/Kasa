@@ -2,8 +2,8 @@ import './style.scss'
 import bannerHome from '../../assets/IMG.png'
 import bannerAbout from '../../assets/about.png'
 
-function Banner(props) {
-  return props.page === 'home' ? (
+function Banner({ page }) {
+  return page === 'home' ? (
     <div className="bannerHome">
       <img src={bannerHome} alt="bannière" />
       <div className="bannerBg"></div>

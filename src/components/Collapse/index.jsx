@@ -1,12 +1,12 @@
 import { useState } from 'react'
 import './style.scss'
 
-const Collapse = (props) => {
+const Collapse = ({ title, text }) => {
   const [isOpen, setIsOpen] = useState(false)
   return (
     <div className="collapse">
       <div className="collapseTitle" onClick={() => setIsOpen(!isOpen)}>
-        {props.title}
+        {title}
 
         <svg
           className="svg"
@@ -31,16 +31,16 @@ const Collapse = (props) => {
       </div>
       {isOpen && (
         <div className="collapseText">
-          {props.title === 'Équipements' ? (
+          {title === 'Équipements' ? (
             <ul className="collapseList">
-              {props.text.map((equip) => (
+              {text.map((equip) => (
                 <li className="collapseListItem" key={equip}>
                   {equip}
                 </li>
               ))}
             </ul>
           ) : (
-            <p className="text">{props.text}</p>
+            <p className="text">{text}</p>
           )}
         </div>
       )}

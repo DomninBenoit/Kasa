@@ -3,14 +3,17 @@
   margin-top: 25px;
   width: 100%;
   height: 255px;
-
-  .pictureActive {
-    position: absolute;
-    object-fit: fill;
-    width: 100%;
+  .bgPicture {
     height: 255px;
-    border-radius: 10px;
+    .pictureActive {
+      position: absolute;
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+    }
   }
+
   .arrowLeft,
   .arrowRight {
     position: absolute;
@@ -26,26 +29,28 @@
     right: 2%;
   }
   .pictureNumber {
-    overflow: hidden;
+    opacity: 0;
   }
 }
 
 @media (min-width: 900px) {
   .carousel {
     height: 415px;
-    .pictureActive {
+    .bgPicture {
       height: 415px;
     }
     .arrowLeft,
     .arrowRight {
       width: 48px;
       height: 80px;
+      top: 40%;
     }
     .pictureNumber {
       position: absolute;
       color: white;
       left: 50%;
       bottom: 3%;
+      opacity: 1;
     }
   }
 }

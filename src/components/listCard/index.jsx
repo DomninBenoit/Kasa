@@ -2,7 +2,7 @@ import './style.scss'
 import Card from '../Card'
 import datas from '../../data/data.json'
 
-function listCard() {
+function ListCard() {
   return (
     <div className="listCard">
       {datas.map(({ id, cover, title }) => (
@@ -12,4 +12,4 @@ function listCard() {
   )
 }
 
-export default listCard
+export default ListCard
