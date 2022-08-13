@@ -8,11 +8,14 @@ import Tags from '../../components/Tags'
 import Collapse from '../../components/Collapse'
 import Rating from '../../components/Rating'
 import Footer from '../../components/Footer'
+import ErrorPage from '../ErrorPage'
 
 const Lodging = () => {
   const { id } = useParams()
   const idGal = datas.find((data) => data.id === id)
-  return (
+  return idGal === undefined ? (
+    <ErrorPage />
+  ) : (
     <div>
       <Header />
       <Gallery pictures={idGal.pictures} />

@@ -31,7 +31,7 @@ const Collapse = ({ title, text }) => {
       </div>
       {isOpen && (
         <div className="collapseText">
-          {title === 'Équipements' ? (
+          {Array.isArray(text) ? (
             <ul className="collapseList">
               {text.map((equip) => (
                 <li className="collapseListItem" key={equip}>
